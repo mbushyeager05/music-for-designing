@@ -1,9 +1,9 @@
-# Randomized Design Inspiration
+# Music for Designing
 
-> Randomized inpspiration to hopefully spark design ideas. 
+> Randomized music that is fun to listen to while designing.
 
 ## What is this?
-- Website that generates random quotes and colors of inspiration.
+- Website that generates random music.
 
 ## How does it work? 
 - Predefined quotes and colors are loaded from a JSON file
