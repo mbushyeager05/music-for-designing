@@ -1,4 +1,4 @@
-console.log('👍 JS Connected');
+`console.log('👍 JS Connected');
 
 // Tailwind Background Utlities
 const backgrounds = ["bg-red-300", "bg-green-300", "bg-blue-300"];
