@@ -23,48 +23,59 @@ const albumCovers = [
 const music  = [
   {
     music: "What You Need (feat. Charrlotte Day Wilson) ",
-    author: "KAYTRANADA"
+    author: "KAYTRANADA",
+    cover: "assets/images/What You Need (feat. Charrlotte Day Wilson).png"
   },
   {
     music: "Young Folks",
-    author: "Peter Bjorn and John"
+    author: "Peter Bjorn and John",
+    cover: "assets/images/Young Folks.png"
   },
   {
     music: "SLOW DANCING IN THE DARK ",
-    author: "Joji"
+    author: "Joji",
+    cover: "assets/images/SLOW DANCING IN THE DARK.png"
   },
-{
+  {
     music: "Cinderella",
-    author: "Remi Wolf"
+    author: "Remi Wolf",
+    cover: "assets/images/Cinderella.png"
   },
-{
+  {
     music: "Keep Me Satisfied",
-    author: "Jungle"
+    author: "Jungle",
+    cover: "assets/images/Keep Me Satisfied.png"
   },
-{
+  {
     music: "Disco Dangerous",
-    author: "Little Dragon"
+    author: "Little Dragon",
+    cover: "assets/images/Disco Dangerous.png"
   },
   {
     music: "Aperture",
-    author: "Harry Styles"
+    author: "Harry Styles",
+    cover: "assets/images/Aperture.png"
   },
- {
+  {
     music: "Terrified",
-    author: "Childish Gambino"
+    author: "Childish Gambino",
+    cover: "assets/images/Terrified.png"
   },
- {
+  {
     music: "Don't Try This At Home",
-    author: "Future Utopia"
+    author: "Future Utopia",
+    cover: "assets/images/Don't Try This At Home.png"
   },
-   {
+  {
     music: "Let's Live",
-    author: "FKJ"
+    author: "FKJ",
+    cover: "assets/images/Let's Live.png"
   }
 ];
 
 // Get DOM elements
 const body = document.querySelector("#body");
+const albumImg = document.querySelector("img");
 const quoteText = document.querySelector("#quote-text");
 const quoteAuthor = document.querySelector("#quote-author");
 const refreshBtn = document.querySelector("#refresh-btn");
@@ -74,8 +85,12 @@ function getRandomQuote() {
   const randomIndex = Math.floor(Math.random() * music.length);
   const selectedQuote = music[randomIndex];
 
+  // Update album cover
+  albumImg.src = selectedQuote.cover;
+  albumImg.alt = `${selectedQuote.music} Album cover`;
+
   // Update quote
-  quoteText.textContent = `"${selectedQuote.quote}"`;
+  quoteText.textContent = `"${selectedQuote.music}"`;
   quoteAuthor.textContent = `— ${selectedQuote.author}`;
 
   // Get random background
