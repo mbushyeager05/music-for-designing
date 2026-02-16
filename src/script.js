@@ -24,52 +24,62 @@ const music  = [
   {
     music: "What You Need (feat. Charrlotte Day Wilson) ",
     author: "KAYTRANADA",
-    cover: "assets/images/What You Need (feat. Charrlotte Day Wilson).png"
+    cover: "assets/images/What You Need (feat. Charrlotte Day Wilson).png",
+    bgColor: "bg-cyan-950"
   },
   {
     music: "Young Folks",
     author: "Peter Bjorn and John",
-    cover: "assets/images/Young Folks.png"
+    cover: "assets/images/Young Folks.png",
+    bgColor: "bg-purple-500"
   },
   {
     music: "SLOW DANCING IN THE DARK ",
     author: "Joji",
-    cover: "assets/images/SLOW DANCING IN THE DARK.png"
+    cover: "assets/images/SLOW DANCING IN THE DARK.png",
+    bgColor: "bg-zinc-900"
   },
   {
     music: "Cinderella",
     author: "Remi Wolf",
-    cover: "assets/images/Cinderella.png"
+    cover: "assets/images/Cinderella.png",
+    bgColor: "bg-red-800"
   },
   {
     music: "Keep Me Satisfied",
     author: "Jungle",
-    cover: "assets/images/Keep Me Satisfied.png"
+    cover: "assets/images/Keep Me Satisfied.png",
+    bgColor: "bg-amber-100"
   },
   {
     music: "Disco Dangerous",
     author: "Little Dragon",
-    cover: "assets/images/Disco Dangerous.png"
+    cover: "assets/images/Disco Dangerous.png",
+    bgColor: "bg-blue-950"
   },
   {
     music: "Aperture",
     author: "Harry Styles",
-    cover: "assets/images/Aperture.png"
+    cover: "assets/images/Aperture.png",
+    bgColor: "bg-gray-950"
   },
   {
     music: "Terrified",
     author: "Childish Gambino",
-    cover: "assets/images/Terrified.png"
+    cover: "assets/images/Terrified.png",
+    bgColor: "bg-sky-900"
   },
   {
     music: "Don't Try This At Home",
     author: "Future Utopia",
-    cover: "assets/images/Don't Try This At Home.png"
+    cover: "assets/images/Don't Try This At Home.png",
+    bgColor: "bg-amber-100"
   },
   {
     music: "Let's Live",
     author: "FKJ",
-    cover: "assets/images/Let's Live.png"
+    cover: "assets/images/Let's Live.png",
+    bgColor: "bg-green-950"
   }
 ];
 
@@ -93,12 +103,8 @@ function getRandomQuote() {
   quoteText.textContent = `"${selectedQuote.music}"`;
   quoteAuthor.textContent = `— ${selectedQuote.author}`;
 
-  // Get random background
-  const randomBgIndex = Math.floor(Math.random() * backgrounds.length);
-  const newBackground = backgrounds[randomBgIndex];
-
-  // Replace entire class attribute
-  body.className = `${newBackground} min-h-screen flex items-center justify-center transition-all duration-700`;
+  // Use the album's specific background color
+  body.className = `${selectedQuote.bgColor} min-h-screen flex items-center justify-center transition-all duration-700`;
 }
 
 // Add event listener to button
