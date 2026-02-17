@@ -33,7 +33,7 @@ const music  = [
     music: "Young Folks",
     author: "Peter Bjorn and John",
     cover: "assets/images/Young Folks.png",
-    bgColor: "bg-purple-500",
+    bgColor: "bg-stone-200",
     appleLink: "https://music.apple.com/us/search?term=Young%20Folks",
     spotifyLink: "https://open.spotify.com/search/Young%20Folks"
   },
