@@ -19,7 +19,7 @@ const albumCovers = [
   "/images/Let's Live.png"
 ];
 
-// Sample design quotes JSON data
+// Sample design music JSON data
 const music  = [
   {
     music: "What You Need (feat. Charrlotte Day Wilson) ",
