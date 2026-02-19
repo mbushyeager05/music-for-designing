@@ -20,3 +20,6 @@
 - npm
 - Vite
 - Tailwind CSS
+
+## Citations
+- Used Claude Sonnet 4.6 to help with code issues.
